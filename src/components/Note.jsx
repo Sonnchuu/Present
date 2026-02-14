@@ -28,7 +28,7 @@ const Note = ({ text, isOpen, onClose }) => {
             animate={{ scale: 1, rotate: 0, y: 0 }}
             exit={{ scale: 0, rotate: 10, y: 100 }}
             transition={{ type: "spring", damping: 15 }}
-            className="relative w-full max-w-sm bg-stone-50 p-8 shadow-2xl rounded-sm border-l-4 border-yellow-300"
+            className="relative w-full max-w-[90vw] sm:max-w-sm bg-stone-50 p-6 sm:p-8 shadow-2xl rounded-sm border-l-4 border-yellow-300"
             style={{
               clipPath: "polygon(0% 0%, 100% 0%, 98% 100%, 2% 98%)", // Леко накъсани краища
             }}
@@ -46,7 +46,7 @@ const Note = ({ text, isOpen, onClose }) => {
 
             {/* Текстът на причината */}
             <div className="relative mt-4">
-              <p className="font-handwriting text-3xl text-stone-800 leading-tight">
+              <p className="font-handwriting text-2xl sm:text-3xl text-stone-800 leading-tight">
                 {text}
               </p>
             </div>

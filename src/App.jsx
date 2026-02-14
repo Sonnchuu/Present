@@ -47,7 +47,7 @@ function App() {
   };
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-center p-10 overflow-hidden bg-rose-50/50">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-10 overflow-hidden bg-rose-50/50">
       <Background />
       <FloatingHearts />
 
@@ -69,7 +69,7 @@ function App() {
           <motion.h1
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="text-6xl md:text-8xl text-center bg-gradient-to-r from-rose-500 via-love-pink to-rose-500 bg-clip-text text-transparent sparkle-text tracking-wide leading-tight px-4 font-title select-none"
+            className="text-4xl sm:text-7xl md:text-8xl text-center bg-gradient-to-r from-rose-500 via-love-pink to-rose-500 bg-clip-text text-transparent sparkle-text tracking-wide leading-tight px-4 font-title select-none"
           >
             100 причини защо те обичам
           </motion.h1>
@@ -91,10 +91,10 @@ function App() {
             transition={{ duration: 1.5, delay: 0.5 }}
             className="h-[1.5px] bg-gradient-to-r from-transparent via-rose-300 to-transparent shadow-[0_0_8px_white]"
           />
-          <div className="mt-4 px-8 py-2 bg-white/30 backdrop-blur-md rounded-full border border-white/40 text-rose-500 font-title text-3xl shadow-sm tracking-wide">
+          <div className="mt-4 px-6 py-2 bg-white/30 backdrop-blur-md rounded-full border border-white/40 text-rose-500 font-title text-xl sm:text-3xl shadow-sm tracking-wide">
             Открити причини:{" "}
             <span className="text-love-pink font-bold mx-1">{openedCount}</span>{" "}
-            <span className="opacity-60 text-xl">/ 100</span> ✨
+            <span className="opacity-60 text-lg sm:text-xl">/ 100</span> ✨
           </div>
         </div>
       </motion.div>

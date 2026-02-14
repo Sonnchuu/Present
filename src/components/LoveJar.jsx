@@ -56,7 +56,7 @@ const LoveJar = ({ onOpenNote }) => {
       {/* 2. BODY SECTION */}
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="relative z-30 flex flex-col items-center"
+        className="relative z-30 flex flex-col items-center scale-[0.85] sm:scale-100 origin-center"
       >
         <div className="w-[115px] h-8 bg-white/30 backdrop-blur-md border-x-2 border-white/40 shadow-inner" />
 
