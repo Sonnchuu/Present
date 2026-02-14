@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-love-pink: #ff758c;
+  --color-deep-blush: #ff7eb3;
+  --color-glass-white: rgba(255, 255, 255, 0.2);
+  --color-cotton-candy: #fff5f7;
+  --color-paper-yellow: #fef9c3;
+  --color-note-paper: #fef9c3;
+  --color-love-rose: #e11d48;
+
+  --font-handwriting: "Caveat", cursive;
+  --font-title: "Caveat", cursive;
+  --font-elegant: "Caveat", cursive;
+}
+
+@layer base {
+  canvas,
+  img,
+  video,
+  div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px rgba(255, 117, 140, 0.3));
+  }
+  50% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 2px rgba(255, 117, 140, 0.1));
+  }
+}
+
+.sparkle-text {
+  animation: sparkle 4s infinite ease-in-out;
+}
